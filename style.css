@@ -398,3 +398,37 @@ header a {
     display: flex;
     justify-content: flex-end;
 }
+
+/* company */
+.company{
+    width: 1136px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 170px;
+}
+.company a{
+    display: block;
+    text-align: center;
+}
+.company > div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 90px 110px;
+    margin-top: 88px;
+}
+.company > div img{
+    width: 157px;
+    height: 30px;
+}
+.company > div img:nth-child(5){
+    transform: scale(1.5);
+}
+.company > div > div {
+    position: relative;
+}
+.company > div > div  svg{
+    position: absolute;
+    left: 90px;
+    top: 15px;
+    z-index: 1;
+}
