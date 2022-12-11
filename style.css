@@ -32,6 +32,7 @@ header h2 {
     flex-direction: column;
     gap: 9px;
     align-items: flex-end;
+    cursor: pointer;
 }
 
 header a {
@@ -123,12 +124,14 @@ header a {
 }
 
 /* industry experts */
-.industry-experts{
+.industry-experts {
     margin: 0 auto;
     margin-top: 160px;
+    margin-bottom: 265px;
     /* max-width: 80%; */
     max-width: 1136px;
 }
+
 .link {
     font-weight: 500;
     font-size: 16px;
@@ -137,7 +140,8 @@ header a {
     color: #EC2232;
     text-decoration: none;
 }
-.industry-experts h1 {
+
+.section-title {
     font-weight: 500;
     font-size: 70px;
     line-height: 85px;
@@ -146,28 +150,33 @@ header a {
     margin: 0;
     margin-top: 23px;
 }
-.industry-experts article{
+
+.industry-experts article {
     display: flex;
     justify-content: flex-end;
     margin-top: 0;
 }
+
 .industry-experts article p {
     max-width: 450px;
     font-size: 18px;
     line-height: 29px;
     margin-top: 0;
 }
-.industry-experts .points{
+
+.industry-experts .points {
     display: flex;
     justify-content: space-between;
     margin-top: 136px;
 }
-.industry-experts .points div{
+
+.industry-experts .points div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.industry-experts .points div h1{
+
+.industry-experts .points div h1 {
     font-weight: 600;
     font-size: 110px;
     line-height: 85px;
@@ -175,12 +184,52 @@ header a {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin: 0;
 }
-.industry-experts .points div h1 svg{
+
+.industry-experts .points div h1 svg {
     width: 65px;
 }
-.industry-experts .points div p{
+
+.industry-experts .points div p {
     font-size: 30px;
     line-height: 35px;
     color: var(--sub-black);
+    margin-bottom: 0;
+}
+
+/* partners across */
+.partners-across{
+    position: relative;
+    max-width: 100vw;
+    background: url('./assets/pngwing\ 2.png') top right no-repeat, url('./assets/pngwing\ 3.png') center left no-repeat;
+    background-size: 400px, 420px;
+    padding-top: 150px;
+}
+.partners-across > div{
+    margin-left: 232px;
+}
+.partners-across > div > h1 {
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 138px;
+}
+.swiper-slide{
+    /* drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.07)); */
+    /* margin: 0 5px; */
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);
+    width: 445px;
+    height: 493px;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 493px;
+}
+.swiper-slide h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    margin: 45px 60px;
+    color: var(--sub-black)
 }

@@ -8,6 +8,56 @@
     <title>HTML Developer</title>
     <!-- style -->
     <link rel="stylesheet" href="style.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style> -->
 </head>
 
 <body>
@@ -60,7 +110,7 @@
     <!-- industry experts -->
     <section class="industry-experts">
         <a class="link" href="#">Smart Working Team</a>
-        <h1>Some of the best of <br /> industry experts</h1>
+        <h1 class="section-title">Some of the best of <br /> industry experts</h1>
         <article>
             <p>Sed perspiciatis uncle amnis iste natus error sit voluptatem accusantium doloreeque laudanti um totam rem
                 aperiam, eaque ipsa quae ab illo inve ntore veritatis et qasi architecto betae vitae clicta sunt
@@ -87,6 +137,47 @@
             </div>
         </div>
     </section>
+    <!-- partners across -->
+    <section class="partners-across">
+        <div>
+            <a class="link" href="#" alt="">Customer First Approach</a>
+            <h1 class="section-title">First choice of procurement <br> partners across global</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/slider/pexels-werner-pfennig-6949931 1.png" alt="">
+                        <h3>Best Of The Best <br> Industry Experts</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/slider/pexels-frans-van-heerden-2881632 1.png" alt="">
+                        <h3>Vast Procurement <br> Network</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/slider/pexels-thisisengineering-3862632 1.png" alt="">
+                        <h3>Latest Technology <br>For Analysis</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/slider/pexels-anamul-rezwan-1145434 1.png" alt="">
+                        <h3>Best Of The Best Industry Experts</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3.2,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
