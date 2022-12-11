@@ -242,11 +242,14 @@ header a {
 /* industry serve */
 .industry-serve {
     max-width: 1600px;
-    margin: 0 auto;
-    margin-bottom: 200px;
+    margin: 200px auto;
     padding: 0 160px;
+    position: relative;
 }
-
+.industry-serve > svg:first-child{
+    position: absolute;
+    right: 10px;
+}
 .industry-serve .svg-div:first-child {
     overflow: hidden;
 }
@@ -255,6 +258,12 @@ header a {
     overflow: hidden;
     position: relative;
     top: -40px;
+    /* background-color: red; */
+}
+.industry-serve .svg-div:nth-child(3) {
+    overflow: hidden;
+    position: relative;
+    top: -80px;
 }
 
 .industry-serve .svg-div svg {
@@ -263,11 +272,11 @@ header a {
     margin: 0;
 }
 
-.industry-serve .svg-div:first-child svg {
+.industry-serve .svg-div:nth-child(2) svg {
     top: 52px;
 }
 
-.industry-serve .svg-div:nth-child(2) svg {
+.industry-serve .svg-div:nth-child(3) svg {
     top: 50px;
 }
 
@@ -278,7 +287,7 @@ header a {
     margin: 0;
     /* margin-bottom: 29px; */
     position: relative;
-    top: -25px;
+    top: -45px;
     padding: 0;
 }
 
@@ -340,4 +349,52 @@ header a {
     font-size: 18px;
     line-height: 29px;
     margin: 0;
+}
+
+/* Machine & Infra */
+.machine-infra{
+    background: url('./assets/chester-alvarez-bphc6kyobMg-unsplash\ 2.png'), #094367;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.machine-infra > div{
+    max-width: 1136px;
+    margin: 0 auto;
+    padding: 240px 0 ;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.machine-infra .left{
+    width: 60%;
+}
+.machine-infra .left p{
+    width: 80%;
+}
+.machine-infra .left > div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.machine-infra .left > div h1{
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+.machine-infra .left > div h3{
+    font-weight: 500;
+    font-size: 42.1214px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+/* .machine-infra .left > div p{
+    display: flex;
+    gap: 5px;
+} */
+.machine-infra .left > div img{
+    margin-top: 87px;
+}
+.machine-infra .right{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
 }
